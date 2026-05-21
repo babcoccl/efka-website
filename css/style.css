@@ -511,7 +511,7 @@ p {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: scroll;
     color: var(--text-light);
     z-index: 1;
 }
@@ -1298,7 +1298,7 @@ textarea {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: scroll;
     padding: 100px 0;
     z-index: 1;
 }
