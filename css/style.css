@@ -1296,6 +1296,15 @@ textarea {
     border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
+.section-separator {
+    height: 100px;
+    background-color: var(--bg-light);
+    border-top: 1px solid var(--border-color-light);
+    border-bottom: 1px solid var(--border-color-light);
+    position: relative;
+    z-index: 2;
+}
+
 .business-partners-section {
     background-color: #ffffff;
 }
@@ -1367,6 +1376,10 @@ textarea {
     
     .volunteer-box {
         padding: 30px 20px;
+    }
+    
+    .section-separator {
+        height: 60px;
     }
     
     .partners-logos-grid {
