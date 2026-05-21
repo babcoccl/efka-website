@@ -1559,3 +1559,29 @@ textarea {
         padding: var(--space-4) var(--space-3);
     }
 }
+
+/* Custom aspect ratio height overrides for background blocks on desktop */
+@media (min-width: 1025px) {
+    .testimonials-section {
+        aspect-ratio: 2048 / 1359;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+    }
+    .testimonials-section .container {
+        width: 100%;
+    }
+    
+    .volunteer-section {
+        aspect-ratio: 1755 / 1167;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+    }
+    .volunteer-section .container {
+        width: 100%;
+    }
+}
+

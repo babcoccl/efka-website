@@ -10,6 +10,8 @@
 </head>
 <body>
 
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
 <header class="site-header">
     <div class="container header-container">
         <div class="logo">
@@ -17,18 +19,18 @@
                 <img src="assets/images/efka_logo_web.png" alt="Education Foundation of the Kennebunks and Arundel">
             </a>
         </div>
-        <button class="mobile-nav-toggle" aria-label="Toggle navigation">
+        <button class="mobile-nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
             <span></span>
             <span></span>
             <span></span>
         </button>
-        <nav class="nav-container">
+        <nav class="nav-container" aria-label="Main Navigation">
             <ul class="main-menu">
-                <li class="menu-item "><a href="index.html">Home</a></li>
+                <li class="menu-item"><a href="index.html">Home</a></li>
                 <li class="menu-item active"><a href="about-us.html">About Us</a></li>
-                <li class="menu-item "><a href="events.html">Events</a></li>
+                <li class="menu-item"><a href="index.html#programs">Programs</a></li>
                 <li class="menu-item ">
-                    <a href="grant-applications.html">Grants</a>
+                    <a href="index.html#grants">Grants</a>
                     <div class="dropdown-menu">
                         <a href="grant-applications.html">Grant Applications</a>
                         <a href="proposal-form.html">Proposal Form</a>
@@ -43,14 +45,21 @@
                         <a href="business-partner-program.html">Business Partner Program</a>
                     </div>
                 </li>
-                <li class="menu-item "><a href="volunteer.html">Volunteer</a></li>
+                <li class="menu-item ">
+                    <a href="index.html#volunteer">Volunteer</a>
+                    <div class="dropdown-menu">
+                        <a href="volunteer.html">Volunteer Opportunities</a>
+                    </div>
+                </li>
                 <li class="menu-item "><a href="videos.html">Videos</a></li>
                 <li class="menu-item "><a href="news.html">News</a></li>
-                <li class="menu-item "><a href="contact-us.html">Contact Us</a></li>
+                <li class="menu-item"><a href="index.html#contact">Contact</a></li>
             </ul>
         </nav>
     </div>
 </header>
+
+<main id="main-content">
 
 <section class="page-intro">
     <div class="container text-center">
@@ -239,7 +248,9 @@
     </div>
 </section>
 
-<footer class="site-footer">
+</main>
+
+<footer class="site-footer" id="contact">
     <div class="container footer-grid">
         <div class="footer-widget">
             <h3>About EFKA</h3>
@@ -252,14 +263,14 @@
                 <li><a href="about-us.html">About Us</a></li>
                 <li><a href="grant-applications.html">Grant Applications</a></li>
                 <li><a href="donate.html">Donate Today</a></li>
-                <li><a href="volunteer.html">Volunteer opportunities</a></li>
+                <li><a href="volunteer.html">Volunteer Opportunities</a></li>
                 <li><a href="contact-us.html">Contact Us</a></li>
             </ul>
         </div>
         <div class="footer-widget">
             <h3>Get Involved</h3>
             <p>We are a 100% volunteer-driven organization with no office space or paid staff. We're always seeking volunteers from the local community to help us achieve our goals.</p>
-            <a href="volunteer.html" class="btn btn-primary" style="margin-top: 15px; font-size: 0.8rem; padding: 10px 20px;">Volunteer Now</a>
+            <a href="volunteer.html" class="btn btn-primary" style="margin-top: 15px; font-size: 0.85rem; padding: 10px 20px;">Volunteer Now</a>
         </div>
     </div>
     <div class="container footer-bottom">
@@ -270,32 +281,31 @@
 
 <!-- Quick Contact Sliding Drawer Widget -->
 <div class="quick-contact-container">
-    <button class="quick-contact-trigger" aria-label="Toggle Quick Contact">
+    <button class="quick-contact-trigger" aria-label="Toggle Quick Contact" aria-haspopup="dialog" aria-expanded="false">
         <svg class="message-icon" viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-2 12H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z"/></svg>
         <svg class="close-icon" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
     </button>
-    <div class="quick-contact-drawer">
+    <div class="quick-contact-drawer" role="dialog" aria-label="Quick Contact Form">
         <h3>Quick Contact</h3>
         <p>Send us an email and we'll get back to you asap.</p>
         <form id="quick-contact-form" class="interactive-form">
             <div class="form-group">
-                <input type="text" name="qc_name" placeholder="Name" required>
+                <input type="text" name="qc_name" placeholder="Name" aria-label="Your Name" required>
             </div>
             <div class="form-group">
-                <input type="email" name="qc_email" placeholder="Email" required>
+                <input type="email" name="qc_email" placeholder="Email" aria-label="Your Email Address" required>
             </div>
             <div class="form-group">
-                <textarea name="qc_message" placeholder="Message" required></textarea>
+                <textarea name="qc_message" placeholder="Message" aria-label="Your Message" required></textarea>
             </div>
             <div class="checkbox-group">
                 <input type="checkbox" id="qc_gdpr" name="qc_gdpr" required>
                 <label for="qc_gdpr">I consent to Education Foundation KA collecting my details through this form.</label>
             </div>
-            <button type="submit" class="btn btn-accent" style="margin-top: 15px;">Send</button>
+            <button type="submit" class="btn btn-accent">Send Message</button>
         </form>
     </div>
 </div>
-
 <script src="js/script.js"></script>
 </body>
 </html>
