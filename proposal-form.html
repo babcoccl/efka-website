@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proposal Form - Education Foundation KA</title>
+    <meta name="description" content="Apply for an EFKA standard educational grant by completing our online proposal form.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="assets/images/fav.png">
+</head>
+<body>
+
+<header class="site-header">
+    <div class="container header-container">
+        <div class="logo">
+            <a href="index.html">
+                <img src="assets/images/efka_logo_web.png" alt="Education Foundation of the Kennebunks and Arundel">
+            </a>
+        </div>
+        <button class="mobile-nav-toggle" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav class="nav-container">
+            <ul class="main-menu">
+                <li class="menu-item "><a href="index.html">Home</a></li>
+                <li class="menu-item "><a href="about-us.html">About Us</a></li>
+                <li class="menu-item "><a href="events.html">Events</a></li>
+                <li class="menu-item active">
+                    <a href="grant-applications.html">Grants</a>
+                    <div class="dropdown-menu">
+                        <a href="grant-applications.html">Grant Applications</a>
+                        <a href="proposal-form.html">Proposal Form</a>
+                        <a href="micro-grant.html">Micro Grant</a>
+                        <a href="reflection-form.html">Reflection Form</a>
+                    </div>
+                </li>
+                <li class="menu-item ">
+                    <a href="donate.html">Donate</a>
+                    <div class="dropdown-menu">
+                        <a href="donate.html">Donate Today</a>
+                        <a href="business-partner-program.html">Business Partner Program</a>
+                    </div>
+                </li>
+                <li class="menu-item "><a href="volunteer.html">Volunteer</a></li>
+                <li class="menu-item "><a href="videos.html">Videos</a></li>
+                <li class="menu-item "><a href="news.html">News</a></li>
+                <li class="menu-item "><a href="contact-us.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section class="page-intro">
+    <div class="container text-center">
+        <h1>Submit a Proposal</h1>
+        <p>Step One: Provide details of your proposed educational grant program.</p>
+    </div>
+</section>
+
+<section class="section-padding bg-light">
+    <div class="container">
+        <div class="form-container">
+            <div class="form-info-box">
+                <p>Please note: It is critically important that we receive photos and/or a video of the grant in action. These materials will aid EFKA in sharing successful projects with the community. When appropriate, final projects, reflections and/or thank you notes from students would also be appreciated.</p>
+            </div>
+            
+            <form id="proposal-form" class="interactive-form">
+                <h3 class="form-section-title">Grant Intent Approval</h3>
+                <div class="form-group full-width checkbox-group">
+                    <input type="checkbox" id="intent_approved" name="intent_approved" required>
+                    <label for="intent_approved"><strong>Has a Grant Intent Form been approved for this request?</strong> Your EFKA school representative will ask for a copy of your approved Grant Intent Form.<span class="required-star">*</span></label>
+                </div>
+                
+                <h3 class="form-section-title">General Information</h3>
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="grant_title">Grant Title<span class="required-star">*</span></label>
+                        <input type="text" id="grant_title" name="grant_title" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="sub_date">Submission Date<span class="required-star">*</span></label>
+                        <input type="date" id="sub_date" name="sub_date" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="funds_req_date">Date Funds Required<span class="required-star">*</span></label>
+                        <input type="date" id="funds_req_date" name="funds_req_date" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="schools">School(s)<span class="required-star">*</span></label>
+                        <input type="text" id="schools" name="schools" placeholder="e.g. Kennebunk High School" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="benefit_count">Number of students/teachers to benefit<span class="required-star">*</span></label>
+                        <input type="text" id="benefit_count" name="benefit_count" placeholder="e.g. 150 students" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="grades">Grade(s)<span class="required-star">*</span></label>
+                        <input type="text" id="grades" name="grades" placeholder="e.g. 9-12" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="amount_requested">Amount Requested ($)<span class="required-star">*</span></label>
+                        <input type="text" id="amount_requested" name="amount_requested" placeholder="e.g. 2500" required>
+                    </div>
+                </div>
+
+                <h3 class="form-section-title">Project Details & Description</h3>
+                <div class="form-group full-width">
+                    <label for="description">1. Description of project/event:<span class="required-star">*</span></label>
+                    <textarea id="description" name="description" required></textarea>
+                </div>
+                <div class="form-group full-width">
+                    <label for="innovation">2. How does the project promote creativity and innovation?<span class="required-star">*</span></label>
+                    <textarea id="innovation" name="innovation" required></textarea>
+                </div>
+                <div class="form-group full-width">
+                    <label for="curriculum">3. How does this project enhance the curriculum?<span class="required-star">*</span></label>
+                    <textarea id="curriculum" name="curriculum" required></textarea>
+                </div>
+                <div class="form-group full-width">
+                    <label for="budget">4. Itemized project budget (please list itemized costs and describe funds received from other sources, if any):<span class="required-star">*</span></label>
+                    <textarea id="budget" name="budget" placeholder="Items, quantities, unit costs..." required></textarea>
+                </div>
+                <div class="form-group full-width">
+                    <label for="recurring">5. Will the project have recurring or ongoing operational expenses? If so, how will they be paid?<span class="required-star">*</span></label>
+                    <textarea id="recurring" name="recurring" required></textarea>
+                </div>
+                <div class="form-group full-width">
+                    <label for="evaluation">6. What method(s) of evaluation of the success of the project will you employ? How will you inform parents, staff, and community members of how this project was funded?<span class="required-star">*</span></label>
+                    <textarea id="evaluation" name="evaluation" required></textarea>
+                </div>
+
+                <h3 class="form-section-title">Applicant Contact Details</h3>
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="applicant_name">Name(s) of Applicant<span class="required-star">*</span></label>
+                        <input type="text" id="applicant_name" name="applicant_name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="applicant_title">Position or Title of Application Contact<span class="required-star">*</span></label>
+                        <input type="text" id="applicant_title" name="applicant_title" placeholder="e.g. Science Teacher" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail<span class="required-star">*</span></label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number(s)<span class="required-star">*</span></label>
+                        <input type="text" id="phone" name="phone" required>
+                    </div>
+                </div>
+
+                <h3 class="form-section-title">Principal Signoff</h3>
+                <p style="font-size: 0.9rem; margin-bottom: 20px; color: var(--text-muted);">Please submit this grant application to your Principal for approval.</p>
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="principal">Principal Name<span class="required-star">*</span></label>
+                        <input type="text" id="principal" name="principal" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="principal_date">Approval Date<span class="required-star">*</span></label>
+                        <input type="date" id="principal_date" name="principal_date" required>
+                    </div>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-primary">Submit Application</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+<footer class="site-footer">
+    <div class="container footer-grid">
+        <div class="footer-widget">
+            <h3>About EFKA</h3>
+            <p>By engaging the community in the success of our students, we are able to provide creative and experiential learning opportunities for the students and educators of RSU 21.</p>
+            <p style="margin-top: 15px;">EFKA is an independent, charitable 501(c)(3) nonprofit organization, governed by an unpaid Board of Directors.</p>
+        </div>
+        <div class="footer-widget">
+            <h3>Quick Links</h3>
+            <ul class="footer-links">
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="grant-applications.html">Grant Applications</a></li>
+                <li><a href="donate.html">Donate Today</a></li>
+                <li><a href="volunteer.html">Volunteer opportunities</a></li>
+                <li><a href="contact-us.html">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="footer-widget">
+            <h3>Get Involved</h3>
+            <p>We are a 100% volunteer-driven organization with no office space or paid staff. We're always seeking volunteers from the local community to help us achieve our goals.</p>
+            <a href="volunteer.html" class="btn btn-primary" style="margin-top: 15px; font-size: 0.8rem; padding: 10px 20px;">Volunteer Now</a>
+        </div>
+    </div>
+    <div class="container footer-bottom">
+        <p>Copyright EFKA // All Rights Reserved &copy; 2026</p>
+        <p>Website Managed by <a href="https://www.rycodesign.com" target="_blank" rel="noopener">Ryco Design</a></p>
+    </div>
+</footer>
+
+<!-- Quick Contact Sliding Drawer Widget -->
+<div class="quick-contact-container">
+    <button class="quick-contact-trigger" aria-label="Toggle Quick Contact">
+        <svg class="message-icon" viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-2 12H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z"/></svg>
+        <svg class="close-icon" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+    </button>
+    <div class="quick-contact-drawer">
+        <h3>Quick Contact</h3>
+        <p>Send us an email and we'll get back to you asap.</p>
+        <form id="quick-contact-form" class="interactive-form">
+            <div class="form-group">
+                <input type="text" name="qc_name" placeholder="Name" required>
+            </div>
+            <div class="form-group">
+                <input type="email" name="qc_email" placeholder="Email" required>
+            </div>
+            <div class="form-group">
+                <textarea name="qc_message" placeholder="Message" required></textarea>
+            </div>
+            <div class="checkbox-group">
+                <input type="checkbox" id="qc_gdpr" name="qc_gdpr" required>
+                <label for="qc_gdpr">I consent to Education Foundation KA collecting my details through this form.</label>
+            </div>
+            <button type="submit" class="btn btn-accent" style="margin-top: 15px;">Send</button>
+        </form>
+    </div>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
