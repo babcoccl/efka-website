@@ -662,7 +662,7 @@ p {
     position: relative;
     background-image: url('../assets/images/what-people-are-saying.jpg');
     background-size: cover;
-    background-position: center;
+    background-position: top center;
     background-repeat: no-repeat;
     background-attachment: scroll;
     padding: var(--space-8) 0;
@@ -1284,7 +1284,7 @@ textarea {
     position: relative;
     background-image: url('../assets/images/become-a-volunteer.jpg');
     background-size: cover;
-    background-position: center;
+    background-position: top center;
     background-repeat: no-repeat;
     background-attachment: scroll;
     padding: var(--space-9) 0;
@@ -1563,7 +1563,7 @@ textarea {
 /* Custom aspect ratio height overrides for background blocks on desktop */
 @media (min-width: 1025px) {
     .testimonials-section {
-        aspect-ratio: 2048 / 1359;
+        aspect-ratio: 2048 / 1087;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -1574,7 +1574,7 @@ textarea {
     }
     
     .volunteer-section {
-        aspect-ratio: 1755 / 1167;
+        aspect-ratio: 1755 / 934;
         display: flex;
         align-items: center;
         justify-content: center;
