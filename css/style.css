@@ -491,31 +491,88 @@ p {
    Testimonial Block
    ========================================================================== */
 .testimonials-section {
-    background: linear-gradient(135deg, var(--primary) 0%, rgba(9, 109, 171, 0.95) 100%);
+    position: relative;
+    background-image: url('../assets/images/what-people-are-saying.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     color: var(--text-light);
+    z-index: 1;
 }
 
-.testimonial-container {
-    max-width: 800px;
-    margin: 0 auto;
+.testimonials-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: -1;
+}
+
+.testimonials-subtitle {
+    color: var(--primary-light);
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
 }
 
 .testimonial-card {
-    text-align: center;
-    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    padding: 35px 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+    transition: var(--transition-smooth);
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+    background-color: rgba(255, 255, 255, 0.12);
+    border-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
 }
 
 .testimonial-quote {
-    font-size: 1.35rem;
+    font-size: 0.95rem;
     font-style: italic;
-    line-height: 1.6;
+    line-height: 1.7;
+    color: #f0f4f8;
     margin-bottom: 25px;
 }
 
+.testimonial-meta {
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 15px;
+}
+
 .testimonial-author {
+    font-size: 1.05rem;
     font-weight: 700;
     color: var(--primary-light);
-    font-size: 1.1rem;
+}
+
+.testimonial-company {
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.6);
+    margin-top: 3px;
 }
 
 /* ==========================================================================
@@ -1200,5 +1257,125 @@ textarea {
     
     .form-container {
         padding: 20px;
+    }
+}
+
+/* ==========================================================================
+   Volunteer & Business Partners Blocks
+   ========================================================================== */
+.volunteer-section {
+    position: relative;
+    background-image: url('../assets/images/become-a-volunteer.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 100px 0;
+    z-index: 1;
+}
+
+.volunteer-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.65);
+    z-index: -1;
+}
+
+.volunteer-box {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 50px 40px;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.business-partners-section {
+    background-color: #ffffff;
+}
+
+.btn-outline-primary {
+    background-color: transparent;
+    color: var(--primary);
+    border-color: var(--primary);
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--primary);
+    color: var(--text-light);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(9, 109, 171, 0.2);
+}
+
+.partners-logos-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.partner-logo-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 165px;
+    padding: 25px;
+    background-color: #ffffff;
+    border: 1px solid var(--border-color-light);
+    border-radius: 6px;
+    box-shadow: var(--shadow-subtle);
+    transition: var(--transition-smooth);
+}
+
+.partner-logo-item:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-medium);
+    border-color: var(--primary-light);
+}
+
+.partner-logo-item img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+/* ==========================================================================
+   Responsive Overrides for Testimonials & Partners
+   ========================================================================== */
+@media (max-width: 992px) {
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .testimonials-section,
+    .volunteer-section {
+        background-attachment: scroll;
+        padding: 60px 0;
+    }
+    
+    .volunteer-box {
+        padding: 30px 20px;
+    }
+    
+    .partners-logos-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .partner-logo-item {
+        height: 120px;
+        padding: 15px;
     }
 }
