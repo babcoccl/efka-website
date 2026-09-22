@@ -17,7 +17,7 @@ efka-website/
 ├── proposal-form.html            # 20-field standard grant proposal form
 ├── micro-grant.html              # 17-field micro-grant application (for projects under $750)
 ├── reflection-form.html          # 16-field post-grant reflection form & student privacy waiver
-├── donate.html                   # Donor levels, bequests guide, eTapestry gateway CTA
+├── donate.html                   # Donor levels, bequests guide, Give Butter gateway CTA
 ├── business-partner-program.html # Business tiers ($250 to $5000+), partner brochure download
 ├── volunteer.html                # HELEN KELLER quote, list of opportunities, committee guides
 ├── videos.html                   # Video archive (6 Vimeo embeds in responsive cards)
